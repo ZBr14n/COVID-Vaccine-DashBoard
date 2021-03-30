@@ -1,0 +1,49 @@
+
+
+In Dashboard component, allow user to deep search specific town/cities within
+the state(s) that they choose --> if user clicks 'search cities within state', 
+route to City component and fetch the API for specific states which contains allow
+cities and towns; use redux to pass selectedState as global state.
+
+
+<Grid container spacing={3}></Grid>
+
+
+ || entry2.features?.properties.address !== "" || entry2.features?.properties.address !== undefined
+
+optional chaining works:
+{
+              this.state.vaxSites_byCity.map((entry, key) => (
+               <div>
+                    {entry.features?.map(entry => entry.properties?.address)}
+                  </div>
+              ))
+            }
+
+
+
+<Accordion>
+                <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+            >
+            <Typography className={classes.heading}>IMPORTANT INFORMATION</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+            <Typography>
+                    Check if you are eligible to get vaccinated now and prepare for your appointment.
+
+                    Use this page to find a COVID-19 vaccination location. All vaccination locations are listed, but appointment availability is currently only shown for some local Board of Health sites and CVS. For locations not providing their availability, click "Details" to visit their scheduling link for appointment information.
+
+                    If you are eligible for a vaccination you can preregister to be notified when an appointment is available to schedule at one of the 7 mass vaccination locations. Learn more about preregistration.
+
+                    States receives a limited supply of COVID-19 vaccine doses from the federal government each week. Due to high demand and very limited supply, there are only a small number of available appointments.
+            </Typography>
+            </AccordionDetails>
+        </Accordion>
+
+
+            <br />
+            <br />
+            <br />
