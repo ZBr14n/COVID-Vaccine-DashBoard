@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from "react-router-dom";
 import "../styles/components/Dashboard.scss"
 
 import { withStyles } from '@material-ui/core/styles';
@@ -62,7 +63,10 @@ class Dashboard extends Component {
         // sessionStorage.setItem('stateCode', stateCode)
         localStorage.setItem('stateCode', stateCode)
 
-        window.location.href = '/cities'
+        // window.location.href = '/cities'
+        
+        window.location.replace(window.location.origin + '/cities');
+        
     }
 
 
@@ -204,4 +208,4 @@ class Dashboard extends Component {
 
 
 
-export default withStyles(useRowStyles)(Dashboard)
+export default withStyles(useRowStyles)(withRouter(Dashboard))

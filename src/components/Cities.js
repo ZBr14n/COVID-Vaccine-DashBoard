@@ -133,7 +133,8 @@ class Cities extends Component {
 
 
     handleMoreDetails = () => {
-      window.location.href = '/details'
+      // window.location.href = '/details'
+      window.location.replace(window.location.origin + '/details');
     }
 
     // handleClickOpen = () => {
