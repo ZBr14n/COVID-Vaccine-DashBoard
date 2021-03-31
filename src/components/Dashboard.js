@@ -65,8 +65,9 @@ class Dashboard extends Component {
 
         // window.location.href = '/cities'
         
-        window.location.replace(window.location.origin + '/cities');
+        // window.location.replace(window.location.origin + '/cities');
         
+        this.props.history.push('/cities')
     }
 
 
