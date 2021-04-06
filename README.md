@@ -6,7 +6,7 @@ https://covid-vaccine-dashboard.netlify.app/
 
 
 ### 4/4/21 - 4/5:
-For this task, I set up Azure Functions with API Management which will act as an API to pull the secret key from Key Vault. The Key Vault uses managed identity which Azure will create AD users of this key and app will then authenticate using Azure Active Directory. Along with setting CORS access policy for the domain, even if the secret is exposed and someone tries to access the key, they won't be able to get anything from the key since the only person who can communicate with the key is this app. 
+For this task, I set up Azure Functions  which will act as an API to pull the secret key from Key Vault. The Key Vault uses managed identity which Azure will create AD users of this key and the app will then authenticate using Azure Active Directory. Along with setting CORS access policy for the domain, even if the secret is exposed and someone tries to access the key, they won't be able to get anything from the key since the only person who can communicate with the key is this app. I also set up API Management for this app and found another way to access the secret safely.
 ![azure1](https://user-images.githubusercontent.com/5561950/113644610-26108180-9653-11eb-81f7-51deaae7bc6e.PNG)
 ![azure2](https://user-images.githubusercontent.com/5561950/113652457-d1c0ce00-9661-11eb-8d48-d10255beb3f9.PNG)
 
